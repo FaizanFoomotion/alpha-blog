@@ -6,7 +6,7 @@
 # db:schema:load`. When creating a new database, `bin/rails db:schema:load` tends to
 # be faster and is potentially less error prone than running all of your
 # migrations from scratch. Old migrations may fail to apply correctly if those
-# migrations use external dependencies or application code.
+# migrations use external dependencies or application codarticle.title?e.
 #
 # It's strongly recommended that you check this file into your version control system.
 
@@ -15,6 +15,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_23_095721) do
     t.string "title"
     t.time "created_at"
     t.time "updated_at"
+    t.text "description"
   end
 
 end
